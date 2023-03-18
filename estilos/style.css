@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Lembrando que essa configuração abaixo é sempre bom fazer para zerar todas as margins e paddings da página para não ter problemas futuros com configurações 
+    A configuração da fonte é para caso for cadastro alguma fonte e ela não puder ser implementada, automaticamente a configuração que vai para página é a que esta na confg abaixo*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    /* Altura total do navegador */
+
+    width: 100vw;
+    /* Largura total do navegador */
+
+    background-color: black;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    background-color: green;
+}
+
+/* Para poder deixar a section do telefone totalmente centralizada foi necessário deixar primeiro o MAIN com a (position: relative;) para poder fazer os ajustes no (position: absolute;) dentro da section do telefone */
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+
+}
+
+section#redes-sociais{
+    
+}
