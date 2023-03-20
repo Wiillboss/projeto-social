@@ -53,6 +53,8 @@ section#redes-sociais img{
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    
+    /* A configuração abaixo é para que a borda faça parte do objeto quando o efeito de passar o mouse funciona sem alterar a estrutura dos demais icones das redes*/
     box-sizing: border-box;
 }
 
