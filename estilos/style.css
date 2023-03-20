@@ -18,10 +18,15 @@ html, body{
     background-color: black;
 }
 
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 main{
     height: 100vh;
     position: relative;
-    background-color: green;
 }
 
 /* Para poder deixar a section do telefone totalmente centralizada foi necessário deixar primeiro o MAIN com a (position: relative;) para poder fazer os ajustes no (position: absolute;) dentro da section do telefone */
@@ -37,6 +42,42 @@ section#telefone{
 
 }
 
-section#redes-sociais{
-    
+/* Caso queira deixar os icones das redes sociais do lado direito como o professor fez na aula, basta retirar o comentário da section#redes-sociais abaixo. */
+
+/* section#redes-sociais{
+    text-align: right;
+} */
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+
+/* Essa parte da tela inicial do telefone foi feita na tentativa e erro, ou seja ele foi adptando os valores de cada que o que estava sendo mostrado  dentro da tela do celular*/
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+/* As configurações abaixo é para quando passar o mouse em cima dos icones das redes sociais */
+section#redes-sociais img:hover{
+    /* Abaixo é uma configuração para quando passar o mouse em cima, é acrescentando uma borda branca fina */
+    border: 2px solid rgba(255, 255, 255, 0.637);
+
+    /* Abaixo é uma configuração para quando passar o mouse em cima, o icone é deslocado para cima e direito - essa configuração depende de colocar negativo nos eixo X ou Y */
+    transform: translate(3px, -3px);
+
+    /* Abaixo é uma configuração para quando passar o mouse em cima, é acrescentando uma sombra preta */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+
+    /* Abaixo é uma configuração para quando passar o mouse em cima, é acrescentando uma deslocamento suave do icone
+        Também o efeito de sombra em 1 segundo. */
+    transition: transform .4s, border 1s;
 }
